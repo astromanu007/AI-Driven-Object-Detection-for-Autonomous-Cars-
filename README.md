@@ -1,10 +1,17 @@
 # 🚗 **AI-Driven Object Detection for Autonomous Cars**
 
-![AI Object Detection Banner](https://via.placeholder.com/1200x400.png?text=AI+Driven+Object+Detection+for+Autonomous+Cars-)
+![AI Object Detection Banner](https://via.placeholder.com/1200x400.png?text=AI+Driven+Object+Detection+for+Autonomous+Cars)
 
 ## 🔍 Overview
 
 This project focuses on developing a state-of-the-art object detection system for autonomous vehicles using advanced computer vision techniques. The primary goal is to ensure accurate detection of objects such as pedestrians, vehicles, and road signs to improve road safety and enhance autonomous driving capabilities.
+
+### 🎯 Objective
+
+- 🚀 Develop a precise object detection system for autonomous cars.
+- 🎯 Target MNCs by making the project innovative, scalable, and production-ready.
+
+---
 
 ## 🗂️ Project Structure
 
@@ -26,7 +33,7 @@ This project focuses on developing a state-of-the-art object detection system fo
 1. **Clone the repository from GitHub**:
 
     ```bash
-    git clone https://github.com/astromanu/AI-Object-Detection-For-Autonomous-Cars-.git
+    git clone https://github.com/astromanu/AI-Object-Detection-For-Autonomous-Cars.git
     cd AI-Object-Detection-For-Autonomous-Cars
     ```
 
@@ -160,7 +167,7 @@ Feel free to contribute by creating issues or pull requests on the GitHub reposi
 ## 📞 Contact Information
 
 - **Author**: Manish Dhatrak
-- **Email**: Eleven to one at the rate Gmail.com
+- **Email**: manishdhatrak1121Gmail.com
 
 ## 🏁 Deployment Demo for MNC Presentation
 
@@ -169,11 +176,8 @@ Feel free to contribute by creating issues or pull requests on the GitHub reposi
 
 ![CARLA Simulation Demo](https://via.placeholder.com/1200x600.png?text=CARLA+Simulation+Demo)
 
----
 
-By following these instructions, you will be able to execute this project seamlessly. The project is well-documented, and each part is designed to ensure accuracy and efficiency, making it suitable for a research internship application.
+[🌐 GitHub Repository](https://github.com/astromanu007/AI-Driven-Object-Detection-for-Autonomous-Cars-)
 
-[🌐 GitHub Repository](https://github.com/astromanu/AI-Object-Detection-For-Autonomous-Cars)
 
-🌟 **Good luck with your internship application!** 🚀
 
