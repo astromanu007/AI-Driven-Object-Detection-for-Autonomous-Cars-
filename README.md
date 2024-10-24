@@ -90,24 +90,6 @@ The project follows a structured organization with the following folder and file
     jupyter notebook notebooks/evaluation.ipynb
     ```
 
-#### 📊 Example Precision-Recall Graph:
-
-```python
-import matplotlib.pyplot as plt
-
-# Plot precision-recall curve
-def plot_precision_recall(precision, recall):
-    plt.plot(recall, precision, color='b', linewidth=2)
-    plt.xlabel('Recall')
-    plt.ylabel('Precision')
-    plt.title('Precision-Recall Curve')
-    plt.grid(True)
-    plt.show()
-
-precision = [0.9, 0.85, 0.8, 0.75]
-recall = [0.1, 0.4, 0.6, 0.9]
-plot_precision_recall(precision, recall)
-```
 
 ### Step 6: Model Optimization
 
