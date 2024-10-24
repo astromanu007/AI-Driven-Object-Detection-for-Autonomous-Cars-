@@ -6,13 +6,6 @@
 
 This project focuses on developing a state-of-the-art object detection system for autonomous vehicles using advanced computer vision techniques. The primary goal is to ensure accurate detection of objects such as pedestrians, vehicles, and road signs to improve road safety and enhance autonomous driving capabilities.
 
-### 🎯 Objective
-
-- 🚀 Develop a precise object detection system for autonomous cars.
-- 🎯 Target MNCs by making the project innovative, scalable, and production-ready.
-
----
-
 ## 🗂️ Project Structure
 
 - **📂 data/**: Datasets for training, validation, and testing.
