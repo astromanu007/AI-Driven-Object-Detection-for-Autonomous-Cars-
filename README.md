@@ -1,6 +1,6 @@
 # 🚗 **AI-Driven Object Detection for Autonomous Cars**
 
-![AI Object Detection Banner](https://via.placeholder.com/1200x400.png?text=AI+Driven+Object+Detection+for+Autonomous+Cars)
+![AI Object Detection Banner](https://via.placeholder.com/1200x400.png?text=AI+Driven+Object+Detection+for+Autonomous+Cars-)
 
 ## 🔍 Overview
 
@@ -33,7 +33,7 @@ This project focuses on developing a state-of-the-art object detection system fo
 1. **Clone the repository from GitHub**:
 
     ```bash
-    git clone https://github.com/astromanu/AI-Object-Detection-For-Autonomous-Cars.git
+    git clone https://github.com/astromanu/AI-Driven-Object-Detection-for-Autonomous-Cars-.git
     cd AI-Object-Detection-For-Autonomous-Cars
     ```
 
