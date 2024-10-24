@@ -1,0 +1,11 @@
+numpy
+pandas
+opencv-python
+matplotlib
+seaborn
+tensorflow
+torch
+albumentations
+flask
+fastapi
+docker
