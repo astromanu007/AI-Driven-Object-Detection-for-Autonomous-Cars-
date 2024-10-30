@@ -49,6 +49,7 @@ This project uses the MobileNet SSD model to perform object detection. You need 
 
 - `MobileNetSSD_deploy.prototxt.txt`
 - `MobileNetSSD_deploy.caffemodel`
+## Note: Already included in the repository.
 
 Make sure both of these files are in the same directory as the script.
 
@@ -105,8 +106,8 @@ The main functionalities of the script include:
 Upon running the script, you will see a window displaying:
 
 ### Images 📷
-- ![Object Detection Image](images/object_detection_image.png)
-- ![Pose Estimation Image](images/pose_estimation_image.png)
+- ![Object Detection & Pose Estimation Image](images/object_detection_image.png)
+
 - Bounding boxes around detected objects.
 - Human pose landmarks.
 - Alerts for unsafe distances or posture faults.
