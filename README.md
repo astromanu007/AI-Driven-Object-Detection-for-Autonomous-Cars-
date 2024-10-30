@@ -1,4 +1,4 @@
-# Real-Time Object Detection for Autonomous Cars with Human Pose Estimation 
+# 🤖 Real-Time Object Detection for Autonomous Cars with Human Pose Estimation 
 
 ## Overview 🚀🔍🤖
 This project implements real-time object detection using a pre-trained MobileNet SSD model along with human pose estimation using MediaPipe Pose. It can detect people and various objects, estimate their distances, and highlight potential posture faults.
