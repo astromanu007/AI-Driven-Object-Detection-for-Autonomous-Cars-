@@ -1,8 +1,9 @@
 # 🤖 Real-Time Object Detection for Autonomous Cars 
 
 ## Overview 🚀🔍🤖
-This project implements real-time object detection using a pre-trained MobileNet SSD model along with human pose estimation using MediaPipe Pose. It can detect people and various objects, estimate their distances, and highlight potential posture faults.
+Revolutionizing autonomous driving with cutting-edge AI! This turbocharged project harnesses the power of MobileNet SSD to deliver lightning-fast object detection that keeps self-driving cars aware of their surroundings. Watch in amazement as it instantly identifies vehicles, pedestrians, traffic signs and more in real-time! 
 
+But wait, there's more! We've supercharged this autonomous driving assistant with bonus features like human pose tracking and proximity alerts. Think of it as your car's very own AI co-pilot, keeping you safe and informed on the road ahead! 🚗💨
 ## Features ✨🛠️
 - Real-time detection of multiple objects and people. 🕵️‍♂️📷
 - Pose estimation for humans using MediaPipe. 🧍‍♂️💃
