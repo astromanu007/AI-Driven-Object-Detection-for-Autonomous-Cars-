@@ -1,4 +1,4 @@
-# 🤖 Real-Time Object Detection for Autonomous Cars with Human Pose Estimation 
+# 🤖 Real-Time Object Detection for Autonomous Cars 
 
 ## Overview 🚀🔍🤖
 This project implements real-time object detection using a pre-trained MobileNet SSD model along with human pose estimation using MediaPipe Pose. It can detect people and various objects, estimate their distances, and highlight potential posture faults.
@@ -95,7 +95,7 @@ The main functionalities of the script include:
 
 ## Troubleshooting 🛠️🔧
 
-*Note: YOLO is not used in this project as it is already used in the previous project for autonomous cars which was in same repository and is under development for further modifications.*
+*Note: YOLO is not used in this project as it is already used in the previous project for autonomous cars which was in the same repository and is under development for further modifications.*
 1. **Model Files Missing**: Ensure both the `prototxt` and `caffemodel` files are available in the same directory.
 2. **Webcam Not Detected**: Verify that your webcam is connected and functioning correctly.
 3. **Dependencies**: Ensure all required dependencies are installed using `pip`.
@@ -111,7 +111,7 @@ Upon running the script, you will see a window displaying:
 - Alerts for unsafe distances or posture faults.
 
 ## Additional Notes 📝🔍
-Further enhancements are on the way to improve the detection accuracy, performance, and extend the system capabilities for broader applications, including real-time monitoring and safety solutions. 🚀🛠️
+Further enhancements are on the way to improve the detection accuracy, and performance, and extend the system capabilities for broader applications, including real-time monitoring and safety solutions. 🚀🛠️
 
 **Note**: A version of this project designed specifically for autonomous cars has been modified and is still in use for research and development purposes.
 - **Performance**: Real-time processing may vary depending on the performance of your computer.
