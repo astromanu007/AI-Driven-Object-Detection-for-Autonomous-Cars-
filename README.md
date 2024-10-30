@@ -1,176 +1,131 @@
-# 🚗 **AI-Driven Object Detection for Autonomous Cars**
+# Real-Time Object Detection with Human Pose Estimation
 
-![AI Object Detection Banner](https://via.placeholder.com/1200x400.png?text=AI+Driven+Object+Detection+for+Autonomous+Cars-)
+## Overview 🚀🔍🤖
+This project implements real-time object detection using a pre-trained MobileNet SSD model along with human pose estimation using MediaPipe Pose. It can detect people and various objects, estimate their distances, and highlight potential posture faults.
 
-## 🔍 Overview
+## Features ✨🛠️
+- Real-time detection of multiple objects and people. 🕵️‍♂️📷
+- Pose estimation for humans using MediaPipe. 🧍‍♂️💃
+- Distance estimation from the camera and between individuals. 📏📐
+- Alerts for incorrect posture or unsafe proximity. ⚠️🚨
 
-This project focuses on developing a state-of-the-art object detection system for autonomous vehicles using advanced computer vision techniques. The primary goal is to ensure accurate detection of objects such as pedestrians, vehicles, and road signs to improve road safety and enhance autonomous driving capabilities.
+## Prerequisites 📋💻
+Before running the project, ensure that the following are installed:
 
-## 🗂️ Project Structure
+1. 🐍 **Python 3.7+**
 
-- **📂 data/**: Datasets for training, validation, and testing.
-- **📜 scripts/**: Python scripts for data preprocessing, augmentation, training, testing, and deployment.
-- **📁 models/**: Pre-trained and custom models.
-- **📓 notebooks/**: Jupyter notebooks for experimentation and visualization.
-- **📤 outputs/**: Outputs, logs, and evaluation results.
-- **🐳 Dockerfile**: Docker configuration for containerization.
-- **📄 requirements.txt**: List of required Python dependencies.
-- **📖 README.md**: Project documentation.
+2. 📦 **Required Packages**: Install all the necessary Python packages using the following command:
+   ```sh
+   pip install numpy
+   pip install opencv-python
+   pip install opencv-contrib-python
+   pip install opencv-python-headless
+   pip install opencv-contrib-python-headless
+   pip install matplotlib
+   pip install imutils
+   pip install mediapipe
+   ```
 
----
+## How to Run 🏃‍♂️💻
 
-## 🚀 Installation and Setup
+### Step 1: Clone or Download the Project 📁📥
 
-### Step 1: Setup
+Download or clone the project repository to your local machine:
 
-1. **Clone the repository from GitHub**:
+```sh
+git clone https://github.com/astromanu007/AI-Driven-Object-Detection-for-Autonomous-Cars-
+```
 
-    ```bash
-    git clone https://github.com/astromanu/AI-Driven-Object-Detection-for-Autonomous-Cars-.git
-    cd AI-Object-Detection-For-Autonomous-Cars
-    ```
+Navigate to the project directory:
 
-2. **Install necessary dependencies**:
+```sh
+cd AI-Driven-Object-Detection-for-Autonomous-Cars-
+```
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+### Step 2: Download Model Files 📂🔗
 
-### Step 2: Project Organization
+This project uses the MobileNet SSD model to perform object detection. You need the following files:
 
-The project follows a structured organization with the following folder and file structure:
+- `MobileNetSSD_deploy.prototxt.txt`
+- `MobileNetSSD_deploy.caffemodel`
 
-- **📂 data/**: Place your datasets here. Ensure the folder has `raw`, `processed`, and `augmented` subdirectories.
-- **📜 scripts/**: Contains Python scripts for each stage of the project.
-- **📁 models/**: Holds the pre-trained models and trained versions of YOLO.
-- **📓 notebooks/**: Interactive Jupyter notebooks for training, evaluation, and experimentation.
-- **📤 outputs/**: Stores logs, results, and other output files.
+Make sure both of these files are in the same directory as the script.
 
----
+### Step 3: Running the Script 🖥️🚀
 
-## 🔧 Execution Steps
+To start the real-time object detection, run the following command:
 
-### Step 3: Data Collection & Preparation
+```sh
+python real_time_object_detection.py --prototxt MobileNetSSD_deploy.prototxt.txt --model MobileNetSSD_deploy.caffemodel
+```
 
-1. **Collect datasets** like COCO, KITTI, or Waymo.
+### Command-Line Arguments
+- `--prototxt`: Path to the Caffe deploy prototxt file.
+- `--model`: Path to the pre-trained Caffe model.
+- `--confidence`: Minimum probability to filter weak detections. Default is `0.2`.
 
-2. **Run the preprocessing script** to prepare the data:
+### Step 4: Using the Application 🎥🖱️
+- **Webcam Access**: The script uses the default webcam. Allow access for live detection.
+- **Key Interactions**:
+  - Press `q` to quit the application.
+- Alternatively, press `Ctrl + C` to terminate the script from the command line.
 
-    ```bash
-    python scripts/data_preprocessing.py
-    ```
+## Project Details 📊📈
 
-3. **Perform data augmentation**:
+## Technology Stack Used 💻🔧
 
-    ```bash
-    python scripts/data_augmentation.py
-    ```
+- **MobileNet SSD** for object detection 🖼️📦
+- **MediaPipe Pose** for human pose estimation 🧍‍♂️🤸‍♀️
+- **OpenCV** for real-time computer vision tasks 📷🖥️
+- **NumPy** for numerical computations 📊➗
+- **Imutils** for image processing utility functions 🛠️🖼️
 
-### Step 4: Model Training
+### Tech Stack Overview 🚀🛠️
+- ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
+- ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?logo=opencv&logoColor=white)
+- ![MediaPipe](https://img.shields.io/badge/-MediaPipe-FFAE42?logo=mediapipe&logoColor=white)
+- ![NumPy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white)
+The main functionalities of the script include:
 
-1. **Train the YOLOv5 model** using the provided notebook:
+- **Object Detection**: Uses MobileNet SSD to detect different objects and people in the frame.
+- **Pose Estimation**: Uses MediaPipe Pose to identify human pose landmarks.
+- **Distance Calculation**: Estimates the distance between detected persons and from the camera.
+- **Posture Fault Detection**: Identifies potential posture faults such as uneven shoulders or hips.
 
-    ```bash
-    jupyter notebook notebooks/train_yolov5.ipynb
-    ```
+## Troubleshooting 🛠️🔧
 
-2. **Fine-tune the model** on specific classes by updating parameters in the training notebook.
+*Note: YOLO is not used in this project as it is already used in the previous project for autonomous cars which was in same repository and is under development for further modifications.*
+1. **Model Files Missing**: Ensure both the `prototxt` and `caffemodel` files are available in the same directory.
+2. **Webcam Not Detected**: Verify that your webcam is connected and functioning correctly.
+3. **Dependencies**: Ensure all required dependencies are installed using `pip`.
 
-### Step 5: Model Evaluation
+## Example Output 📸🖼️
+Upon running the script, you will see a window displaying:
 
-1. **Evaluate model performance** on the test dataset:
+### Images 📷
+- ![Object Detection Image](images/object_detection_image.png)
+- ![Pose Estimation Image](images/pose_estimation_image.png)
+- Bounding boxes around detected objects.
+- Human pose landmarks.
+- Alerts for unsafe distances or posture faults.
 
-    ```bash
-    python scripts/evaluate_model.py
-    ```
+## Additional Notes 📝🔍
+Further enhancements are on the way to improve the detection accuracy, performance, and extend the system capabilities for broader applications, including real-time monitoring and safety solutions. 🚀🛠️
 
-2. **Plot evaluation metrics** like precision-recall curves using Jupyter notebooks:
+**Note**: A version of this project designed specifically for autonomous cars has been modified and is still in use for research and development purposes.
+- **Performance**: Real-time processing may vary depending on the performance of your computer.
+- **Focal Length Calibration**: You may need to adjust the focal length in the `estimate_distance()` function for more accurate distance estimations.
 
-    ```bash
-    jupyter notebook notebooks/evaluation.ipynb
-    ```
+## License 📜
+This project is licensed under the MIT License.
 
+## Created by 👨‍💻
+Created by Manish Dhatrak
+- **Email**: manishdhatrak1121@gmail.com
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/manish-dhatrak-b759171aa/)
 
-### Step 6: Model Optimization
+## Contact 📧💬
+For any questions or issues, please feel free to reach out. 🤝
 
-1. **Run quantization and pruning** for real-time optimization:
-
-    ```bash
-    python scripts/model_optimization.py
-    ```
-
-2. **Convert the model using TensorRT** for faster inference:
-
-    ```bash
-    python scripts/tensorrt_inference.py
-    ```
-
-### Step 7: Deployment
-
-1. **Create a REST API** for real-time inference with FastAPI:
-
-    ```bash
-    uvicorn scripts.app:app --host 0.0.0.0 --port 8000
-    ```
-
-2. **Use Docker** to containerize the deployment for easy scalability:
-
-    ```bash
-    docker build -t ai-object-detection .
-    docker run -p 8000:8000 ai-object-detection
-    ```
-
-### Step 8: Real-World Testing
-
-1. **Test the model in real-world scenarios** by running the video testing script:
-
-    ```bash
-    jupyter notebook notebooks/real_world_testing.ipynb
-    ```
-
-### Step 9: Visualization & Documentation
-
-- **Include precision-recall curves and loss graphs** to visualize model performance.
-- **Add animations and screenshots** of the model's predictions in action.
-
----
-
-## 📊 Evaluation Graphs and Metrics
-
-- **Precision-Recall Curve**:
-
-  ![Precision-Recall Curve](https://via.placeholder.com/800x400.png?text=Precision-Recall+Curve)
-
-- **Loss Convergence Graph**:
-
-  ![Loss Convergence](https://via.placeholder.com/800x400.png?text=Loss+Convergence)
-
-- **mAP Results**:
-
-  ![mAP Results](https://via.placeholder.com/800x400.png?text=mAP+Results)
-
----
-
-## 🤝 Contributions
-
-Feel free to contribute by creating issues or pull requests on the GitHub repository. We welcome suggestions and improvements.
-
----
-
-## 📞 Contact Information
-
-- **Author**: Manish Dhatrak
-- **Email**: manishdhatrak1121Gmail.com
-
-## 🏁 Deployment Demo for MNC Presentation
-
-- **Set up a simulated environment** using the CARLA simulator.
-- Showcase the **real-time detection capabilities** through detailed visual demonstrations.
-
-![CARLA Simulation Demo](https://via.placeholder.com/1200x600.png?text=CARLA+Simulation+Demo)
-
-
-[🌐 GitHub Repository](https://github.com/astromanu007/AI-Driven-Object-Detection-for-Autonomous-Cars-)
-
-
-
+- **Email**: manishdhatrak1121@gmail.com
+- **GitHub**: [GitHub Profile](https://github.com/astromanu007)
