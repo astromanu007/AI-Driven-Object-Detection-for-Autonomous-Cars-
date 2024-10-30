@@ -123,7 +123,6 @@ This project is licensed under the MIT License.
 
 ## Created by 👨‍💻
 Created by Manish Dhatrak
-- **Email**: manishdhatrak1121@gmail.com
 - **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/manish-dhatrak-b759171aa/)
 
 ## Contact 📧💬
