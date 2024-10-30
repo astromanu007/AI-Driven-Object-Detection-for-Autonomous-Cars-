@@ -85,6 +85,7 @@ python real_time_object_detection.py --prototxt MobileNetSSD_deploy.prototxt.txt
 - ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?logo=opencv&logoColor=white)
 - ![MediaPipe](https://img.shields.io/badge/-MediaPipe-FFAE42?logo=mediapipe&logoColor=white)
 - ![NumPy](https://img.shields.io/badge/-NumPy-013243?logo=numpy&logoColor=white)
+
 The main functionalities of the script include:
 
 - **Object Detection**: Uses MobileNet SSD to detect different objects and people in the frame.
